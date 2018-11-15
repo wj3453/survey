@@ -15,7 +15,10 @@ Route::get('/', function () {
     return view('login');
 });
 Route::get('/area', function () {
-    return view('area');
+
+    $geography = DB::table('geography')->get();
+
+  return view('area', ['geography' => $geography]);
 });
 
 

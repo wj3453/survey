@@ -11,6 +11,9 @@
                     
                     <select name="provice" id="provice">
                         <option value="">------เลือกภาค------</option>
+                        @foreach($geography as $value)
+                        <option value="">{{$value[GEO_NAME] }}</option>c
+                        @endforeach
                     </select>
                     <select name="provice" id="provice">
                         <option value="">------เลือกจังหวัด------</option>
